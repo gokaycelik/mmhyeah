@@ -1,4 +1,4 @@
-local library = loadstring(game:HttpGetAsync(""))()
+local library = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/gokaycelik/mmhyeah/master/universallibrary"))()
 local window = library:CreateWindow('A Universal Time')
 window:Toggle('Item Autofarm', {flag = "items"})
 
