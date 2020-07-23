@@ -1,0 +1,17 @@
+local library = loadstring(game:HttpGetAsync(""))()
+local window = library:CreateWindow('A Universal Time')
+window:Toggle('Item Autofarm', {flag = "items"})
+
+while true do
+    if window.flags.items then
+        for i,v in pairs(game.Workspace.Items:GetChildren()) do
+            if v.Name == "Checker" then --Won't do anything unless Checker is deleted
+                v:Destroy()
+            else do
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Handle.CFrame
+            end 
+            end
+        end
+    end
+wait(0.1)
+end
